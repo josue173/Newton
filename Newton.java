@@ -41,11 +41,12 @@ public class Newton {
     }
     
     public static double funcion(double x){
-        return  Math.pow(Math.E, x) -5;
+        return  Math.pow(x, 3) - Math.pow(Math.E, 2) + (6*x) - 24; // x^3 - e^2 + 6x - 24
+        
     }
     
     public static double derivada(double x){
-        return Math.pow(Math.E, x);
+        return Math.pow(3*x, 2) - 6; // 3x^2 - 6
     }
     
     public static void mostrar() {
